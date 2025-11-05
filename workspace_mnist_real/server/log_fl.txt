@@ -1,0 +1,7 @@
+2025-11-03 18:39:55,287 - IntimeModelSelector - INFO - model selection weights control: None
+2025-11-03 18:39:55,290 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Initializing ScatterAndGather workflow for Federated Averaging.
+2025-11-03 18:39:55,291 - PTFileModelPersistor - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Both source_ckpt_file_full_name and ckpt_preload_path are not provided. Using the default model weights initialized on the persistor side.
+2025-11-03 18:39:55,291 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Beginning ScatterAndGather training phase.
+2025-11-03 18:39:55,292 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Round 0 started.
+2025-11-03 18:40:12,434 - ServerRunner - ERROR - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=EXECUTION_EXCEPTION, task_name=train, task_id=62d7d9f0-6cae-43cc-b8bf-f2ea64200da4] - Aborting current RUN due to FATAL_SYSTEM_ERROR received: Result from site-2 is bad, error code: EXECUTION_EXCEPTION. ScatterAndGather exiting at round 0.
+2025-11-03 18:40:12,612 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Abort signal received. Exiting at round 0.

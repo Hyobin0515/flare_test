@@ -1,0 +1,20 @@
+{
+    "name": "mnist_federated_learning",
+    "resource_spec": {},
+    "min_clients": 2,
+    "deploy_map": {
+        "app": [
+            "@ALL"
+        ]
+    },
+    "job_folder_name": "mnist_real",
+    "byoc": true,
+    "job_clients": [
+        {
+            "name": "site-1"
+        },
+        {
+            "name": "site-2"
+        }
+    ]
+}

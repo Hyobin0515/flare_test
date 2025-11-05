@@ -1,0 +1,10 @@
+2025-11-03 18:40:12,429 - MNISTTrainer - ERROR - [identity=site-2, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=62d7d9f0-6cae-43cc-b8bf-f2ea64200da4] - Exception in task execution: expected np.ndarray (got numpy.ndarray)
+2025-11-03 18:40:12,430 - MNISTTrainer - ERROR - [identity=site-2, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=62d7d9f0-6cae-43cc-b8bf-f2ea64200da4] - Traceback (most recent call last):
+  File "/Users/hyobin/Desktop/pycharmProjects/Flare_test/workspace_mnist_real/site-2/simulate_job/app_site-2/custom/mnist_trainer_pytorch.py", line 70, in execute
+    return self._train(shareable, fl_ctx, abort_signal)
+  File "/Users/hyobin/Desktop/pycharmProjects/Flare_test/workspace_mnist_real/site-2/simulate_job/app_site-2/custom/mnist_trainer_pytorch.py", line 148, in _train
+    self._load_weights(global_weights)
+  File "/Users/hyobin/Desktop/pycharmProjects/Flare_test/workspace_mnist_real/site-2/simulate_job/app_site-2/custom/mnist_trainer_pytorch.py", line 256, in _load_weights
+    state_dict[k] = torch.from_numpy(v)
+TypeError: expected np.ndarray (got numpy.ndarray)
+

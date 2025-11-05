@@ -1,0 +1,74 @@
+2025-11-03 18:30:01,576 - ClientTaskWorker - INFO - ClientTaskWorker started to run
+2025-11-03 18:30:01,690 - CoreCell - INFO - site-1.simulate_job: created backbone external connector to tcp://localhost:50861
+2025-11-03 18:30:01,690 - conn_manager - INFO - Connector [CH00001 ACTIVE tcp://localhost:50861] is starting
+2025-11-03 18:30:01,691 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-11-03 18:30:01,691 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-11-03 18:30:01,691 - conn_manager - INFO - Connection [CN00002 127.0.0.1:50873 => 127.0.0.1:50861] is created: PID: 19877
+2025-11-03 18:30:01,796 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-11-03 18:30:01,796 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-11-03 18:30:01,800 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-11-03 18:30:01,800 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-11-03 18:30:01,800 - AuxRunner - INFO - registered aux handler for topic __end_run__
+2025-11-03 18:30:01,801 - AuxRunner - INFO - registered aux handler for topic __do_task__
+2025-11-03 18:30:01,801 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-11-03 18:30:01,801 - AuxRunner - INFO - registered aux handler for topic __sync_runner__
+2025-11-03 18:30:01,801 - AuxRunner - INFO - registered aux handler for topic __job_heartbeat__
+2025-11-03 18:30:01,801 - AuxRunner - INFO - registered aux handler for topic __task_check__
+2025-11-03 18:30:02,307 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - syncing to parent server ...
+2025-11-03 18:30:02,324 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - synced to parent server in 0.5222408771514893 seconds
+2025-11-03 18:30:02,324 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REQUEST
+2025-11-03 18:30:02,324 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REPLY
+2025-11-03 18:30:02,324 - ReliableMessage - INFO - enabled reliable message: max_request_workers=20 query_interval=2.0
+2025-11-03 18:30:02,325 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-11-03 18:30:02,325 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - client runner started
+2025-11-03 18:30:02,325 - ClientTaskWorker - INFO - Initialize ClientRunner for client: site-1
+2025-11-03 18:30:02,330 - Communicator - INFO - Received from server. getTask: train size: 1.3KB (1302 Bytes) time: 0.005008 seconds
+2025-11-03 18:30:02,331 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2025-11-03 18:30:02,331 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=train, id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7
+2025-11-03 18:30:02,331 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - invoking task executor SimpleMNISTTrainer
+2025-11-03 18:30:02,331 - SimpleMNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - Starting training for 1 epochs
+2025-11-03 18:30:02,331 - SimpleMNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - Received model keys: ['numpy_key']
+2025-11-03 18:30:02,332 - SimpleMNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - Epoch 1/1 completed
+2025-11-03 18:30:02,332 - SimpleMNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - Training completed
+2025-11-03 18:30:02,333 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - finished processing task
+2025-11-03 18:30:02,335 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - start to send task result to server
+2025-11-03 18:30:02,335 - FederatedClient - INFO - Starting to push execute result.
+2025-11-03 18:30:02,356 - Communicator - INFO - SubmitUpdate to: server. size: 1.3KB (1302 Bytes). time: 0.021256 seconds
+2025-11-03 18:30:02,356 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - task result sent to server
+2025-11-03 18:30:02,357 - ClientTaskWorker - INFO - Finished one task run for client: site-1 interval: 2 task_processed: True
+2025-11-03 18:30:04,388 - Communicator - INFO - Received from server. getTask: train size: 1.3KB (1302 Bytes) time: 0.012530 seconds
+2025-11-03 18:30:04,388 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2025-11-03 18:30:04,389 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=train, id=3cf1d0f6-3311-434a-900a-665bc999e49c
+2025-11-03 18:30:04,389 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - invoking task executor SimpleMNISTTrainer
+2025-11-03 18:30:04,389 - SimpleMNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - Starting training for 1 epochs
+2025-11-03 18:30:04,390 - SimpleMNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - Received model keys: ['numpy_key']
+2025-11-03 18:30:04,390 - SimpleMNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - Epoch 1/1 completed
+2025-11-03 18:30:04,390 - SimpleMNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - Training completed
+2025-11-03 18:30:04,391 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - finished processing task
+2025-11-03 18:30:04,394 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - start to send task result to server
+2025-11-03 18:30:04,394 - FederatedClient - INFO - Starting to push execute result.
+2025-11-03 18:30:04,433 - Communicator - INFO - SubmitUpdate to: server. size: 1.3KB (1302 Bytes). time: 0.039209 seconds
+2025-11-03 18:30:04,434 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - task result sent to server
+2025-11-03 18:30:04,434 - ClientTaskWorker - INFO - Finished one task run for client: site-1 interval: 2 task_processed: True
+2025-11-03 18:30:06,440 - Communicator - INFO - Received from server. getTask: train size: 1.3KB (1302 Bytes) time: 0.005046 seconds
+2025-11-03 18:30:06,440 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2025-11-03 18:30:06,440 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=train, id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01
+2025-11-03 18:30:06,441 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - invoking task executor SimpleMNISTTrainer
+2025-11-03 18:30:06,441 - SimpleMNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - Starting training for 1 epochs
+2025-11-03 18:30:06,441 - SimpleMNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - Received model keys: ['numpy_key']
+2025-11-03 18:30:06,441 - SimpleMNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - Epoch 1/1 completed
+2025-11-03 18:30:06,441 - SimpleMNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - Training completed
+2025-11-03 18:30:06,442 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - finished processing task
+2025-11-03 18:30:06,460 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - start to send task result to server
+2025-11-03 18:30:06,461 - FederatedClient - INFO - Starting to push execute result.
+2025-11-03 18:30:06,480 - Communicator - INFO - SubmitUpdate to: server. size: 1.3KB (1302 Bytes). time: 0.018898 seconds
+2025-11-03 18:30:06,480 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - task result sent to server
+2025-11-03 18:30:06,480 - ClientTaskWorker - INFO - Finished one task run for client: site-1 interval: 2 task_processed: True
+2025-11-03 18:30:06,589 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - received request from Server to end current RUN
+2025-11-03 18:30:08,490 - FederatedClient - INFO - pull_task completed. Task name:__end_run__ Status:True 
+2025-11-03 18:30:08,490 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - server asked to end the run
+2025-11-03 18:30:08,490 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - started end-run events sequence
+2025-11-03 18:30:08,490 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - ABOUT_TO_END_RUN fired
+2025-11-03 18:30:08,491 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - Firing CHECK_END_RUN_READINESS ...
+2025-11-03 18:30:08,491 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - END_RUN fired
+2025-11-03 18:30:08,491 - ClientTaskWorker - INFO - End the Simulator run.

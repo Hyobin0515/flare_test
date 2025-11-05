@@ -1,0 +1,48 @@
+2025-11-03 18:39:57,998 - ClientTaskWorker - INFO - ClientTaskWorker started to run
+2025-11-03 18:39:58,105 - CoreCell - INFO - site-1.simulate_job: created backbone external connector to tcp://localhost:50896
+2025-11-03 18:39:58,105 - conn_manager - INFO - Connector [CH00001 ACTIVE tcp://localhost:50896] is starting
+2025-11-03 18:39:58,106 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-11-03 18:39:58,106 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-11-03 18:39:58,106 - conn_manager - INFO - Connection [CN00002 127.0.0.1:50908 => 127.0.0.1:50896] is created: PID: 20564
+2025-11-03 18:39:58,207 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-11-03 18:39:58,207 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-11-03 18:39:59,385 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-11-03 18:39:59,385 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-11-03 18:39:59,385 - AuxRunner - INFO - registered aux handler for topic __end_run__
+2025-11-03 18:39:59,386 - AuxRunner - INFO - registered aux handler for topic __do_task__
+2025-11-03 18:39:59,386 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-11-03 18:39:59,386 - AuxRunner - INFO - registered aux handler for topic __sync_runner__
+2025-11-03 18:39:59,386 - AuxRunner - INFO - registered aux handler for topic __job_heartbeat__
+2025-11-03 18:39:59,386 - AuxRunner - INFO - registered aux handler for topic __task_check__
+2025-11-03 18:39:59,894 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - syncing to parent server ...
+2025-11-03 18:39:59,932 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - synced to parent server in 0.5461540222167969 seconds
+2025-11-03 18:39:59,933 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REQUEST
+2025-11-03 18:39:59,933 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REPLY
+2025-11-03 18:39:59,935 - ReliableMessage - INFO - enabled reliable message: max_request_workers=20 query_interval=2.0
+2025-11-03 18:39:59,936 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-11-03 18:39:59,936 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - client runner started
+2025-11-03 18:39:59,936 - ClientTaskWorker - INFO - Initialize ClientRunner for client: site-1
+2025-11-03 18:39:59,970 - Communicator - INFO - Received from server. getTask: train size: 4.8MB (4802801 Bytes) time: 0.033834 seconds
+2025-11-03 18:39:59,972 - FederatedClient - INFO - pull_task completed. Task name:train Status:True 
+2025-11-03 18:39:59,972 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - got task assignment: name=train, id=0e333cb5-e6bd-4ab3-bc29-083b366311fe
+2025-11-03 18:39:59,972 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=0e333cb5-e6bd-4ab3-bc29-083b366311fe] - invoking task executor MNISTTrainer
+2025-11-03 18:40:12,614 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job] - received request from Server to end current RUN
+2025-11-03 18:40:17,159 - MNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=0e333cb5-e6bd-4ab3-bc29-083b366311fe] - Client: site-1
+2025-11-03 18:40:17,160 - MNISTTrainer - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=0e333cb5-e6bd-4ab3-bc29-083b366311fe] - Loaded 30000 training samples
+2025-11-03 18:40:17,161 - MNISTTrainer - ERROR - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=0e333cb5-e6bd-4ab3-bc29-083b366311fe] - Exception in task execution: expected np.ndarray (got numpy.ndarray)
+2025-11-03 18:40:17,162 - MNISTTrainer - ERROR - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=0e333cb5-e6bd-4ab3-bc29-083b366311fe] - Traceback (most recent call last):
+  File "/Users/hyobin/Desktop/pycharmProjects/Flare_test/workspace_mnist_real/site-1/simulate_job/app_site-1/custom/mnist_trainer_pytorch.py", line 70, in execute
+    return self._train(shareable, fl_ctx, abort_signal)
+  File "/Users/hyobin/Desktop/pycharmProjects/Flare_test/workspace_mnist_real/site-1/simulate_job/app_site-1/custom/mnist_trainer_pytorch.py", line 148, in _train
+    self._load_weights(global_weights)
+  File "/Users/hyobin/Desktop/pycharmProjects/Flare_test/workspace_mnist_real/site-1/simulate_job/app_site-1/custom/mnist_trainer_pytorch.py", line 256, in _load_weights
+    state_dict[k] = torch.from_numpy(v)
+TypeError: expected np.ndarray (got numpy.ndarray)
+
+2025-11-03 18:40:17,162 - ClientRunner - INFO - [identity=site-1, run=simulate_job, peer=simulator_server, peer_run=simulate_job, task_name=train, task_id=0e333cb5-e6bd-4ab3-bc29-083b366311fe] - job aborted: stopped trying to send result
+2025-11-03 18:40:17,163 - ClientTaskWorker - INFO - Finished one task run for client: site-1 interval: 2 task_processed: True
+2025-11-03 18:40:17,163 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - started end-run events sequence
+2025-11-03 18:40:17,163 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - ABOUT_TO_END_RUN fired
+2025-11-03 18:40:17,163 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - Firing CHECK_END_RUN_READINESS ...
+2025-11-03 18:40:17,163 - ClientRunner - INFO - [identity=site-1, run=simulate_job] - END_RUN fired
+2025-11-03 18:40:17,163 - ClientTaskWorker - INFO - End the Simulator run.
