@@ -1,0 +1,90 @@
+2025-11-03 18:39:53,250 - SimulatorRunner - INFO - Create the Simulator Server.
+2025-11-03 18:39:53,251 - CoreCell - INFO - server: creating listener on tcp://0:50896
+2025-11-03 18:39:53,394 - CoreCell - INFO - server: created backbone external listener for tcp://0:50896
+2025-11-03 18:39:53,394 - CoreCell - INFO - server: creating listener on tcp://0:50897
+2025-11-03 18:39:53,394 - CoreCell - INFO - server: created backbone external listener for tcp://0:50897
+2025-11-03 18:39:53,396 - conn_manager - INFO - Connector [CH00003 PASSIVE tcp://0:61425] is starting
+2025-11-03 18:39:53,902 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:61425
+2025-11-03 18:39:53,903 - conn_manager - INFO - Connector [CH00001 PASSIVE tcp://0:50896] is starting
+2025-11-03 18:39:53,904 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:50897] is starting
+2025-11-03 18:39:53,907 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-11-03 18:39:53,907 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-11-03 18:39:53,908 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-11-03 18:39:53,908 - SimulatorServer - INFO - max_reg_duration=60.0
+2025-11-03 18:39:53,914 - Cell - INFO - Register blob CB for channel='hci_channel', topic='*'
+2025-11-03 18:39:53,914 - hci - INFO - Admin Server is started
+2025-11-03 18:39:53,915 - SimulatorRunner - INFO - Deploy the Apps.
+2025-11-03 18:39:53,928 - SimulatorRunner - INFO - Create the simulate clients.
+2025-11-03 18:39:53,929 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-11-03 18:39:53,929 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-11-03 18:39:53,929 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-11-03 18:39:53,929 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-11-03 18:39:53,934 - ClientManager - INFO - Client: New client site-1@172.25.86.76 joined. Sent token: 40d6e619-878b-442c-b5ed-06a94073acc2.  Total clients: 1
+2025-11-03 18:39:53,934 - FederatedClient - INFO - Successfully registered client:site-1 for project simulator_server. Token:40d6e619-878b-442c-b5ed-06a94073acc2 SSID:
+2025-11-03 18:39:53,934 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-11-03 18:39:53,935 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-11-03 18:39:53,935 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-11-03 18:39:53,935 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-11-03 18:39:53,935 - ClientManager - INFO - Client: New client site-2@172.25.86.76 joined. Sent token: 320bd3ca-ad27-474e-ab53-8016da22a1c8.  Total clients: 2
+2025-11-03 18:39:53,936 - FederatedClient - INFO - Successfully registered client:site-2 for project simulator_server. Token:320bd3ca-ad27-474e-ab53-8016da22a1c8 SSID:
+2025-11-03 18:39:53,936 - SimulatorRunner - INFO - Set the client status ready.
+2025-11-03 18:39:53,936 - SimulatorRunner - INFO - Deploy and start the Server App.
+2025-11-03 18:39:53,937 - Cell - INFO - Register blob CB for channel='server_command', topic='*'
+2025-11-03 18:39:53,937 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-11-03 18:39:53,937 - ServerCommandAgent - INFO - ServerCommandAgent cell register_request_cb: server.simulate_job
+2025-11-03 18:39:55,287 - IntimeModelSelector - INFO - model selection weights control: None
+2025-11-03 18:39:55,289 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-11-03 18:39:55,289 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-11-03 18:39:55,289 - AuxRunner - INFO - registered aux handler for topic __sync_runner__
+2025-11-03 18:39:55,289 - AuxRunner - INFO - registered aux handler for topic __job_heartbeat__
+2025-11-03 18:39:55,289 - AuxRunner - INFO - registered aux handler for topic __task_check__
+2025-11-03 18:39:55,289 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REQUEST
+2025-11-03 18:39:55,290 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REPLY
+2025-11-03 18:39:55,290 - ReliableMessage - INFO - enabled reliable message: max_request_workers=20 query_interval=2.0
+2025-11-03 18:39:55,290 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job] - Server runner starting ...
+2025-11-03 18:39:55,290 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-11-03 18:39:55,290 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job] - starting workflow scatter_and_gather (<class 'nvflare.app_common.workflows.scatter_and_gather.ScatterAndGather'>) ...
+2025-11-03 18:39:55,290 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Initializing ScatterAndGather workflow for Federated Averaging.
+2025-11-03 18:39:55,291 - PTFileModelPersistor - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Both source_ckpt_file_full_name and ckpt_preload_path are not provided. Using the default model weights initialized on the persistor side.
+2025-11-03 18:39:55,291 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Workflow scatter_and_gather (<class 'nvflare.app_common.workflows.scatter_and_gather.ScatterAndGather'>) started
+2025-11-03 18:39:55,291 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Beginning ScatterAndGather training phase.
+2025-11-03 18:39:55,292 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Round 0 started.
+2025-11-03 18:39:55,292 - WFCommServer - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - scheduled task train
+2025-11-03 18:39:55,948 - SimulatorClientRunner - INFO - Start the clients run simulation.
+2025-11-03 18:39:56,955 - SimulatorClientRunner - INFO - Simulate Run client: site-1 on GPU group: None
+2025-11-03 18:39:56,958 - SimulatorClientRunner - INFO - Simulate Run client: site-2 on GPU group: None
+2025-11-03 18:39:58,106 - conn_manager - INFO - Connection [CN00005 127.0.0.1:50896 <= 127.0.0.1:50908] is created: PID: 20549
+2025-11-03 18:39:58,111 - conn_manager - INFO - Connection [CN00006 127.0.0.1:50896 <= 127.0.0.1:50909] is created: PID: 20549
+2025-11-03 18:39:59,943 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, task_name=train, task_id=62d7d9f0-6cae-43cc-b8bf-f2ea64200da4] - assigned task to client site-2: name=train, id=62d7d9f0-6cae-43cc-b8bf-f2ea64200da4
+2025-11-03 18:39:59,944 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, task_name=train, task_id=0e333cb5-e6bd-4ab3-bc29-083b366311fe] - assigned task to client site-1: name=train, id=0e333cb5-e6bd-4ab3-bc29-083b366311fe
+2025-11-03 18:39:59,944 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, task_name=train, task_id=0e333cb5-e6bd-4ab3-bc29-083b366311fe] - sent task assignment to client. client_name:site-1 task_id:0e333cb5-e6bd-4ab3-bc29-083b366311fe
+2025-11-03 18:39:59,944 - GetTaskCommand - INFO - return task to client.  client_name: site-1  task_name: train   task_id: 0e333cb5-e6bd-4ab3-bc29-083b366311fe  sharable_header_task_id: 0e333cb5-e6bd-4ab3-bc29-083b366311fe
+2025-11-03 18:39:59,951 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, task_name=train, task_id=62d7d9f0-6cae-43cc-b8bf-f2ea64200da4] - sent task assignment to client. client_name:site-2 task_id:62d7d9f0-6cae-43cc-b8bf-f2ea64200da4
+2025-11-03 18:39:59,954 - GetTaskCommand - INFO - return task to client.  client_name: site-2  task_name: train   task_id: 62d7d9f0-6cae-43cc-b8bf-f2ea64200da4  sharable_header_task_id: 62d7d9f0-6cae-43cc-b8bf-f2ea64200da4
+2025-11-03 18:40:12,433 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job] - got result from client site-2 for task: name=train, id=62d7d9f0-6cae-43cc-b8bf-f2ea64200da4
+2025-11-03 18:40:12,434 - ServerRunner - ERROR - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=EXECUTION_EXCEPTION, task_name=train, task_id=62d7d9f0-6cae-43cc-b8bf-f2ea64200da4] - Aborting current RUN due to FATAL_SYSTEM_ERROR received: Result from site-2 is bad, error code: EXECUTION_EXCEPTION. ScatterAndGather exiting at round 0.
+2025-11-03 18:40:12,434 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=EXECUTION_EXCEPTION, task_name=train, task_id=62d7d9f0-6cae-43cc-b8bf-f2ea64200da4] - asked to abort - triggered abort_signal to stop the RUN
+2025-11-03 18:40:12,497 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=EXECUTION_EXCEPTION, task_name=train, task_id=62d7d9f0-6cae-43cc-b8bf-f2ea64200da4] - finished processing client result by scatter_and_gather
+2025-11-03 18:40:12,497 - SubmitUpdateCommand - INFO - submit_update process. client_name:site-2   task_id:62d7d9f0-6cae-43cc-b8bf-f2ea64200da4
+2025-11-03 18:40:12,612 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Abort signal received. Exiting at round 0.
+2025-11-03 18:40:12,612 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Workflow: scatter_and_gather finalizing ...
+2025-11-03 18:40:12,612 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - ABOUT_TO_END_RUN fired
+2025-11-03 18:40:12,613 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Firing CHECK_END_RUN_READINESS ...
+2025-11-03 18:40:12,614 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - END_RUN fired
+2025-11-03 18:40:12,614 - ReliableMessage - INFO - ReliableMessage is shutdown
+2025-11-03 18:40:12,614 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Server runner finished.
+2025-11-03 18:40:13,320 - SimulatorServer - INFO - Server app stopped.
+
+
+2025-11-03 18:40:13,326 - hci - INFO - Admin Server is stopped!
+2025-11-03 18:40:13,326 - SimulatorServer - INFO - shutting down server
+2025-11-03 18:40:13,326 - SimulatorServer - INFO - canceling sync locks
+2025-11-03 18:40:13,327 - SimulatorServer - INFO - server off
+2025-11-03 18:40:14,508 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job] - server runner is finalizing - asked client to end the run
+2025-11-03 18:40:14,509 - GetTaskCommand - INFO - return task to client.  client_name: site-2  task_name: __end_run__   task_id:   sharable_header_task_id: 
+2025-11-03 18:40:14,526 - conn_manager - INFO - Connection [CN00006 Not Connected] is closed PID: 20549
+2025-11-03 18:40:17,181 - conn_manager - INFO - Connection [CN00005 Not Connected] is closed PID: 20549
+2025-11-03 18:40:17,183 - FederatedClient - INFO - Shutting down client run: site-1
+2025-11-03 18:40:17,183 - FederatedClient - INFO - Shutting down client run: site-2
+2025-11-03 18:40:17,183 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - asked to abort - triggered abort_signal to stop the RUN
+2025-11-03 18:40:21,016 - MPM - INFO - MPM: Good Bye!

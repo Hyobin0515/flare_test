@@ -1,0 +1,31 @@
+##!/bin/bash
+#
+## NVIDIA Flare Environment Activation Script
+#
+#VENV_PATH="/home/claude/nvflare_env"
+#
+#echo "========================================"
+#echo "NVIDIA Flare Environment Setup"
+#echo "========================================"
+#
+## Activate virtual environment
+#if [ -d "$VENV_PATH" ]; then
+#    source "$VENV_PATH/bin/activate"
+#    echo "✓ Virtual environment activated: $VENV_PATH"
+#
+#    # Display environment info
+#    echo ""
+#    echo "Environment Information:"
+#    echo "  Python version: $(python --version)"
+#    echo "  NVIDIA Flare version: $(python -c 'import nvflare; print(nvflare.__version__)')"
+#    echo "  Python path: $(which python)"
+#    echo ""
+#    echo "Available commands:"
+#    echo "  - nvflare: NVIDIA Flare CLI"
+#    echo "  - pip: Package installer"
+#    echo ""
+#    echo "To deactivate: type 'deactivate'"
+#else
+#    echo "✗ Virtual environment not found at $VENV_PATH"
+#    exit 1
+#fi

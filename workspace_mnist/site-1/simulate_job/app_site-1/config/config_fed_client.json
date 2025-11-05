@@ -1,0 +1,22 @@
+{
+  "format_version": 2,
+
+  "executors": [
+    {
+      "tasks": ["train", "validate"],
+      "executor": {
+        "id": "Executor",
+        "path": "mnist_trainer.SimpleMNISTTrainer",
+        "args": {
+          "epochs": 1,
+          "lr": 0.01
+        }
+      }
+    }
+  ],
+
+  "task_data_filters": [],
+  "task_result_filters": [],
+
+  "components": []
+}

@@ -1,0 +1,170 @@
+2025-11-03 18:29:57,872 - SimulatorRunner - INFO - Create the Simulator Server.
+2025-11-03 18:29:57,873 - CoreCell - INFO - server: creating listener on tcp://0:50861
+2025-11-03 18:29:57,998 - CoreCell - INFO - server: created backbone external listener for tcp://0:50861
+2025-11-03 18:29:57,998 - CoreCell - INFO - server: creating listener on tcp://0:50862
+2025-11-03 18:29:57,998 - CoreCell - INFO - server: created backbone external listener for tcp://0:50862
+2025-11-03 18:29:58,000 - conn_manager - INFO - Connector [CH00003 PASSIVE tcp://0:39071] is starting
+2025-11-03 18:29:58,504 - CoreCell - INFO - server: created backbone internal listener for tcp://localhost:39071
+2025-11-03 18:29:58,505 - conn_manager - INFO - Connector [CH00001 PASSIVE tcp://0:50861] is starting
+2025-11-03 18:29:58,505 - conn_manager - INFO - Connector [CH00002 PASSIVE tcp://0:50862] is starting
+2025-11-03 18:29:58,507 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-11-03 18:29:58,508 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-11-03 18:29:58,508 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-11-03 18:29:58,509 - SimulatorServer - INFO - max_reg_duration=60.0
+2025-11-03 18:29:58,514 - Cell - INFO - Register blob CB for channel='hci_channel', topic='*'
+2025-11-03 18:29:58,515 - hci - INFO - Admin Server is started
+2025-11-03 18:29:58,515 - SimulatorRunner - INFO - Deploy the Apps.
+2025-11-03 18:29:58,526 - SimulatorRunner - INFO - Create the simulate clients.
+2025-11-03 18:29:58,527 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-11-03 18:29:58,527 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-11-03 18:29:58,528 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-11-03 18:29:58,528 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-11-03 18:29:58,532 - ClientManager - INFO - Client: New client site-1@172.25.86.76 joined. Sent token: 17d8465d-01e7-4e87-a130-6680b8843463.  Total clients: 1
+2025-11-03 18:29:58,532 - FederatedClient - INFO - Successfully registered client:site-1 for project simulator_server. Token:17d8465d-01e7-4e87-a130-6680b8843463 SSID:
+2025-11-03 18:29:58,533 - Cell - INFO - Register blob CB for channel='server_command', topic='get_task'
+2025-11-03 18:29:58,533 - Cell - INFO - Register blob CB for channel='server_command', topic='submit_update'
+2025-11-03 18:29:58,533 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-11-03 18:29:58,533 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-11-03 18:29:58,534 - ClientManager - INFO - Client: New client site-2@172.25.86.76 joined. Sent token: d95c64f0-92ec-4990-bea6-2e01576f78e2.  Total clients: 2
+2025-11-03 18:29:58,534 - FederatedClient - INFO - Successfully registered client:site-2 for project simulator_server. Token:d95c64f0-92ec-4990-bea6-2e01576f78e2 SSID:
+2025-11-03 18:29:58,534 - SimulatorRunner - INFO - Set the client status ready.
+2025-11-03 18:29:58,534 - SimulatorRunner - INFO - Deploy and start the Server App.
+2025-11-03 18:29:58,535 - Cell - INFO - Register blob CB for channel='server_command', topic='*'
+2025-11-03 18:29:58,535 - Cell - INFO - Register blob CB for channel='aux_communication', topic='*'
+2025-11-03 18:29:58,535 - ServerCommandAgent - INFO - ServerCommandAgent cell register_request_cb: server.simulate_job
+2025-11-03 18:29:58,544 - IntimeModelSelector - INFO - model selection weights control: None
+2025-11-03 18:29:58,546 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Request
+2025-11-03 18:29:58,546 - AuxRunner - INFO - registered aux handler for topic ObjectStreamer.Abort
+2025-11-03 18:29:58,546 - AuxRunner - INFO - registered aux handler for topic __sync_runner__
+2025-11-03 18:29:58,546 - AuxRunner - INFO - registered aux handler for topic __job_heartbeat__
+2025-11-03 18:29:58,546 - AuxRunner - INFO - registered aux handler for topic __task_check__
+2025-11-03 18:29:58,546 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REQUEST
+2025-11-03 18:29:58,547 - AuxRunner - INFO - registered aux handler for topic RM.RELIABLE_REPLY
+2025-11-03 18:29:58,547 - ReliableMessage - INFO - enabled reliable message: max_request_workers=20 query_interval=2.0
+2025-11-03 18:29:58,547 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job] - Server runner starting ...
+2025-11-03 18:29:58,547 - AuxRunner - INFO - registered aux handler for topic fed.event
+2025-11-03 18:29:58,547 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job] - starting workflow scatter_and_gather (<class 'nvflare.app_common.workflows.scatter_and_gather.ScatterAndGather'>) ...
+2025-11-03 18:29:58,548 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Initializing ScatterAndGather workflow for Federated Averaging.
+2025-11-03 18:29:58,548 - NPModelPersistor - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Unable to load model from /Users/hyobin/Desktop/pycharmProjects/Flare_test/workspace_mnist/server/simulate_job/models/server.npy: FileNotFoundError: [Errno 2] No such file or directory: '/Users/hyobin/Desktop/pycharmProjects/Flare_test/workspace_mnist/server/simulate_job/models/server.npy'. Using default data instead.
+2025-11-03 18:29:58,548 - NPModelPersistor - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Loaded initial model: {'numpy_key': array([[1., 2., 3.],
+       [4., 5., 6.],
+       [7., 8., 9.]], dtype=float32)}
+2025-11-03 18:29:58,549 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Workflow scatter_and_gather (<class 'nvflare.app_common.workflows.scatter_and_gather.ScatterAndGather'>) started
+2025-11-03 18:29:58,549 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Beginning ScatterAndGather training phase.
+2025-11-03 18:29:58,549 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Round 0 started.
+2025-11-03 18:29:58,549 - WFCommServer - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - scheduled task train
+2025-11-03 18:29:59,541 - SimulatorClientRunner - INFO - Start the clients run simulation.
+2025-11-03 18:30:00,546 - SimulatorClientRunner - INFO - Simulate Run client: site-1 on GPU group: None
+2025-11-03 18:30:00,548 - SimulatorClientRunner - INFO - Simulate Run client: site-2 on GPU group: None
+2025-11-03 18:30:01,691 - conn_manager - INFO - Connection [CN00005 127.0.0.1:50861 <= 127.0.0.1:50873] is created: PID: 19871
+2025-11-03 18:30:01,692 - conn_manager - INFO - Connection [CN00006 127.0.0.1:50861 <= 127.0.0.1:50874] is created: PID: 19871
+2025-11-03 18:30:02,327 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - assigned task to client site-1: name=train, id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7
+2025-11-03 18:30:02,328 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - sent task assignment to client. client_name:site-1 task_id:9c6f6de4-6d2a-46c1-944f-ac685f009bb7
+2025-11-03 18:30:02,328 - GetTaskCommand - INFO - return task to client.  client_name: site-1  task_name: train   task_id: 9c6f6de4-6d2a-46c1-944f-ac685f009bb7  sharable_header_task_id: 9c6f6de4-6d2a-46c1-944f-ac685f009bb7
+2025-11-03 18:30:02,330 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, task_name=train, task_id=16b7d4e2-3cce-49fe-af1a-8ed12171eb66] - assigned task to client site-2: name=train, id=16b7d4e2-3cce-49fe-af1a-8ed12171eb66
+2025-11-03 18:30:02,331 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, task_name=train, task_id=16b7d4e2-3cce-49fe-af1a-8ed12171eb66] - sent task assignment to client. client_name:site-2 task_id:16b7d4e2-3cce-49fe-af1a-8ed12171eb66
+2025-11-03 18:30:02,331 - GetTaskCommand - INFO - return task to client.  client_name: site-2  task_name: train   task_id: 16b7d4e2-3cce-49fe-af1a-8ed12171eb66  sharable_header_task_id: 16b7d4e2-3cce-49fe-af1a-8ed12171eb66
+2025-11-03 18:30:02,336 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job] - got result from client site-1 for task: name=train, id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7
+2025-11-03 18:30:02,337 - DXOAggregator - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - NUM_STEPS_CURRENT_ROUND missing in meta of DXO from site-1 and set to default value, 1.0.  This kind of message will show 10 times at most.
+2025-11-03 18:30:02,337 - DXOAggregator - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - Aggregation_weight missing for site-1 and set to default value, 1.0 This kind of message will show 10 times at most.
+2025-11-03 18:30:02,338 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job] - got result from client site-2 for task: name=train, id=16b7d4e2-3cce-49fe-af1a-8ed12171eb66
+2025-11-03 18:30:02,338 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - Contribution from site-1 ACCEPTED by the aggregator at round 0.
+2025-11-03 18:30:02,355 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=9c6f6de4-6d2a-46c1-944f-ac685f009bb7] - finished processing client result by scatter_and_gather
+2025-11-03 18:30:02,355 - SubmitUpdateCommand - INFO - submit_update process. client_name:site-1   task_id:9c6f6de4-6d2a-46c1-944f-ac685f009bb7
+2025-11-03 18:30:02,355 - DXOAggregator - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=16b7d4e2-3cce-49fe-af1a-8ed12171eb66] - NUM_STEPS_CURRENT_ROUND missing in meta of DXO from site-2 and set to default value, 1.0.  This kind of message will show 10 times at most.
+2025-11-03 18:30:02,356 - DXOAggregator - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=16b7d4e2-3cce-49fe-af1a-8ed12171eb66] - Aggregation_weight missing for site-2 and set to default value, 1.0 This kind of message will show 10 times at most.
+2025-11-03 18:30:02,356 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=16b7d4e2-3cce-49fe-af1a-8ed12171eb66] - Contribution from site-2 ACCEPTED by the aggregator at round 0.
+2025-11-03 18:30:02,369 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=16b7d4e2-3cce-49fe-af1a-8ed12171eb66] - finished processing client result by scatter_and_gather
+2025-11-03 18:30:02,369 - SubmitUpdateCommand - INFO - submit_update process. client_name:site-2   task_id:16b7d4e2-3cce-49fe-af1a-8ed12171eb66
+2025-11-03 18:30:02,434 - WFCommServer - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - task train exit with status TaskCompletionStatus.OK
+2025-11-03 18:30:02,639 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Start aggregation.
+2025-11-03 18:30:02,642 - DXOAggregator - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - aggregating 2 update(s) at round 0
+2025-11-03 18:30:02,644 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - End aggregation.
+2025-11-03 18:30:02,645 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Start persist model on server.
+2025-11-03 18:30:02,647 - NPModelPersistor - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Saved numpy model to: /Users/hyobin/Desktop/pycharmProjects/Flare_test/workspace_mnist/server/simulate_job/models/server.npy
+2025-11-03 18:30:02,648 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - End persist model on server.
+2025-11-03 18:30:02,648 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Round 0 finished.
+2025-11-03 18:30:02,682 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Round 1 started.
+2025-11-03 18:30:02,683 - WFCommServer - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - scheduled task train
+2025-11-03 18:30:04,381 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, task_name=train, task_id=41860f7f-26b5-4e81-8624-af732d4ac54b] - assigned task to client site-2: name=train, id=41860f7f-26b5-4e81-8624-af732d4ac54b
+2025-11-03 18:30:04,382 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, task_name=train, task_id=41860f7f-26b5-4e81-8624-af732d4ac54b] - sent task assignment to client. client_name:site-2 task_id:41860f7f-26b5-4e81-8624-af732d4ac54b
+2025-11-03 18:30:04,383 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - assigned task to client site-1: name=train, id=3cf1d0f6-3311-434a-900a-665bc999e49c
+2025-11-03 18:30:04,384 - GetTaskCommand - INFO - return task to client.  client_name: site-2  task_name: train   task_id: 41860f7f-26b5-4e81-8624-af732d4ac54b  sharable_header_task_id: 41860f7f-26b5-4e81-8624-af732d4ac54b
+2025-11-03 18:30:04,384 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - sent task assignment to client. client_name:site-1 task_id:3cf1d0f6-3311-434a-900a-665bc999e49c
+2025-11-03 18:30:04,386 - GetTaskCommand - INFO - return task to client.  client_name: site-1  task_name: train   task_id: 3cf1d0f6-3311-434a-900a-665bc999e49c  sharable_header_task_id: 3cf1d0f6-3311-434a-900a-665bc999e49c
+2025-11-03 18:30:04,395 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job] - got result from client site-2 for task: name=train, id=41860f7f-26b5-4e81-8624-af732d4ac54b
+2025-11-03 18:30:04,395 - IntimeModelSelector - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=41860f7f-26b5-4e81-8624-af732d4ac54b] - validation metric not existing in site-2
+2025-11-03 18:30:04,396 - DXOAggregator - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=41860f7f-26b5-4e81-8624-af732d4ac54b] - NUM_STEPS_CURRENT_ROUND missing in meta of DXO from site-2 and set to default value, 1.0.  This kind of message will show 10 times at most.
+2025-11-03 18:30:04,397 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job] - got result from client site-1 for task: name=train, id=3cf1d0f6-3311-434a-900a-665bc999e49c
+2025-11-03 18:30:04,397 - DXOAggregator - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=41860f7f-26b5-4e81-8624-af732d4ac54b] - Aggregation_weight missing for site-2 and set to default value, 1.0 This kind of message will show 10 times at most.
+2025-11-03 18:30:04,398 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=41860f7f-26b5-4e81-8624-af732d4ac54b] - Contribution from site-2 ACCEPTED by the aggregator at round 1.
+2025-11-03 18:30:04,414 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=41860f7f-26b5-4e81-8624-af732d4ac54b] - finished processing client result by scatter_and_gather
+2025-11-03 18:30:04,414 - SubmitUpdateCommand - INFO - submit_update process. client_name:site-2   task_id:41860f7f-26b5-4e81-8624-af732d4ac54b
+2025-11-03 18:30:04,415 - IntimeModelSelector - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - validation metric not existing in site-1
+2025-11-03 18:30:04,416 - DXOAggregator - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - NUM_STEPS_CURRENT_ROUND missing in meta of DXO from site-1 and set to default value, 1.0.  This kind of message will show 10 times at most.
+2025-11-03 18:30:04,416 - DXOAggregator - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - Aggregation_weight missing for site-1 and set to default value, 1.0 This kind of message will show 10 times at most.
+2025-11-03 18:30:04,417 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - Contribution from site-1 ACCEPTED by the aggregator at round 1.
+2025-11-03 18:30:04,432 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=3cf1d0f6-3311-434a-900a-665bc999e49c] - finished processing client result by scatter_and_gather
+2025-11-03 18:30:04,433 - SubmitUpdateCommand - INFO - submit_update process. client_name:site-1   task_id:3cf1d0f6-3311-434a-900a-665bc999e49c
+2025-11-03 18:30:04,483 - WFCommServer - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - task train exit with status TaskCompletionStatus.OK
+2025-11-03 18:30:04,508 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Start aggregation.
+2025-11-03 18:30:04,508 - DXOAggregator - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - aggregating 2 update(s) at round 1
+2025-11-03 18:30:04,509 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - End aggregation.
+2025-11-03 18:30:04,509 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Start persist model on server.
+2025-11-03 18:30:04,510 - NPModelPersistor - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Saved numpy model to: /Users/hyobin/Desktop/pycharmProjects/Flare_test/workspace_mnist/server/simulate_job/models/server.npy
+2025-11-03 18:30:04,510 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - End persist model on server.
+2025-11-03 18:30:04,510 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Round 1 finished.
+2025-11-03 18:30:04,525 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Round 2 started.
+2025-11-03 18:30:04,526 - WFCommServer - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - scheduled task train
+2025-11-03 18:30:06,429 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, task_name=train, task_id=6c45f212-18db-4a62-aca9-c0292f78ef02] - assigned task to client site-2: name=train, id=6c45f212-18db-4a62-aca9-c0292f78ef02
+2025-11-03 18:30:06,430 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, task_name=train, task_id=6c45f212-18db-4a62-aca9-c0292f78ef02] - sent task assignment to client. client_name:site-2 task_id:6c45f212-18db-4a62-aca9-c0292f78ef02
+2025-11-03 18:30:06,430 - GetTaskCommand - INFO - return task to client.  client_name: site-2  task_name: train   task_id: 6c45f212-18db-4a62-aca9-c0292f78ef02  sharable_header_task_id: 6c45f212-18db-4a62-aca9-c0292f78ef02
+2025-11-03 18:30:06,437 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - assigned task to client site-1: name=train, id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01
+2025-11-03 18:30:06,438 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - sent task assignment to client. client_name:site-1 task_id:93c36473-6827-4d7a-b33f-dd2ce5cf6f01
+2025-11-03 18:30:06,438 - GetTaskCommand - INFO - return task to client.  client_name: site-1  task_name: train   task_id: 93c36473-6827-4d7a-b33f-dd2ce5cf6f01  sharable_header_task_id: 93c36473-6827-4d7a-b33f-dd2ce5cf6f01
+2025-11-03 18:30:06,440 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job] - got result from client site-2 for task: name=train, id=6c45f212-18db-4a62-aca9-c0292f78ef02
+2025-11-03 18:30:06,441 - IntimeModelSelector - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=6c45f212-18db-4a62-aca9-c0292f78ef02] - validation metric not existing in site-2
+2025-11-03 18:30:06,441 - DXOAggregator - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=6c45f212-18db-4a62-aca9-c0292f78ef02] - NUM_STEPS_CURRENT_ROUND missing in meta of DXO from site-2 and set to default value, 1.0.  This kind of message will show 10 times at most.
+2025-11-03 18:30:06,441 - DXOAggregator - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=6c45f212-18db-4a62-aca9-c0292f78ef02] - Aggregation_weight missing for site-2 and set to default value, 1.0 This kind of message will show 10 times at most.
+2025-11-03 18:30:06,442 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=6c45f212-18db-4a62-aca9-c0292f78ef02] - Contribution from site-2 ACCEPTED by the aggregator at round 2.
+2025-11-03 18:30:06,458 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=6c45f212-18db-4a62-aca9-c0292f78ef02] - finished processing client result by scatter_and_gather
+2025-11-03 18:30:06,459 - SubmitUpdateCommand - INFO - submit_update process. client_name:site-2   task_id:6c45f212-18db-4a62-aca9-c0292f78ef02
+2025-11-03 18:30:06,462 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job] - got result from client site-1 for task: name=train, id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01
+2025-11-03 18:30:06,462 - IntimeModelSelector - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - validation metric not existing in site-1
+2025-11-03 18:30:06,463 - DXOAggregator - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - NUM_STEPS_CURRENT_ROUND missing in meta of DXO from site-1 and set to default value, 1.0.  This kind of message will show 10 times at most.
+2025-11-03 18:30:06,463 - DXOAggregator - WARNING - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - Aggregation_weight missing for site-1 and set to default value, 1.0 This kind of message will show 10 times at most.
+2025-11-03 18:30:06,464 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - Contribution from site-1 ACCEPTED by the aggregator at round 2.
+2025-11-03 18:30:06,479 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job, peer_rc=OK, task_name=train, task_id=93c36473-6827-4d7a-b33f-dd2ce5cf6f01] - finished processing client result by scatter_and_gather
+2025-11-03 18:30:06,479 - SubmitUpdateCommand - INFO - submit_update process. client_name:site-1   task_id:93c36473-6827-4d7a-b33f-dd2ce5cf6f01
+2025-11-03 18:30:06,520 - WFCommServer - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - task train exit with status TaskCompletionStatus.OK
+2025-11-03 18:30:06,567 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Start aggregation.
+2025-11-03 18:30:06,568 - DXOAggregator - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - aggregating 2 update(s) at round 2
+2025-11-03 18:30:06,568 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - End aggregation.
+2025-11-03 18:30:06,568 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Start persist model on server.
+2025-11-03 18:30:06,569 - NPModelPersistor - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Saved numpy model to: /Users/hyobin/Desktop/pycharmProjects/Flare_test/workspace_mnist/server/simulate_job/models/server.npy
+2025-11-03 18:30:06,569 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - End persist model on server.
+2025-11-03 18:30:06,570 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Round 2 finished.
+2025-11-03 18:30:06,587 - ScatterAndGather - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Finished ScatterAndGather Training.
+2025-11-03 18:30:06,587 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Workflow: scatter_and_gather finalizing ...
+2025-11-03 18:30:06,587 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - ABOUT_TO_END_RUN fired
+2025-11-03 18:30:06,588 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Firing CHECK_END_RUN_READINESS ...
+2025-11-03 18:30:06,588 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - END_RUN fired
+2025-11-03 18:30:06,589 - ReliableMessage - INFO - ReliableMessage is shutdown
+2025-11-03 18:30:06,589 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - Server runner finished.
+2025-11-03 18:30:07,563 - SimulatorServer - INFO - Server app stopped.
+
+
+2025-11-03 18:30:07,570 - hci - INFO - Admin Server is stopped!
+2025-11-03 18:30:07,570 - SimulatorServer - INFO - shutting down server
+2025-11-03 18:30:07,570 - SimulatorServer - INFO - canceling sync locks
+2025-11-03 18:30:07,570 - SimulatorServer - INFO - server off
+2025-11-03 18:30:08,473 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-2, peer_run=simulate_job] - server runner is finalizing - asked client to end the run
+2025-11-03 18:30:08,474 - GetTaskCommand - INFO - return task to client.  client_name: site-2  task_name: __end_run__   task_id:   sharable_header_task_id: 
+2025-11-03 18:30:08,485 - conn_manager - INFO - Connection [CN00006 Not Connected] is closed PID: 19871
+2025-11-03 18:30:08,488 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather, peer=site-1, peer_run=simulate_job] - server runner is finalizing - asked client to end the run
+2025-11-03 18:30:08,488 - GetTaskCommand - INFO - return task to client.  client_name: site-1  task_name: __end_run__   task_id:   sharable_header_task_id: 
+2025-11-03 18:30:08,497 - conn_manager - INFO - Connection [CN00005 Not Connected] is closed PID: 19871
+2025-11-03 18:30:08,500 - FederatedClient - INFO - Shutting down client run: site-1
+2025-11-03 18:30:08,501 - FederatedClient - INFO - Shutting down client run: site-2
+2025-11-03 18:30:08,501 - ServerRunner - INFO - [identity=simulator_server, run=simulate_job, wf=scatter_and_gather] - asked to abort - triggered abort_signal to stop the RUN
+2025-11-03 18:30:12,544 - MPM - INFO - MPM: Good Bye!
